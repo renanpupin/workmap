@@ -15,7 +15,26 @@ export default class App extends React.Component {
               latitudeDelta: 0.0922,
               longitudeDelta: 0.0421,
             }}
-          />
+          >
+            <MapView.Marker 
+              coordinate={{latitude: 37.78825, longitude: -122.4324}}
+              title={"Sarah Jones"}
+              description={"Test description 1"}
+              image={require('./app/assets/marker-1.png')}
+            ></MapView.Marker>
+            <MapView.Marker 
+              coordinate={{latitude: 37.75825, longitude: -122.4224}}
+              title={"Marker 2"}
+              description={"July Brandon"}
+              image={require('./app/assets/marker-2.png')}
+            ></MapView.Marker>
+            <MapView.Marker 
+              coordinate={{latitude: 37.78825, longitude: -122.4424}}
+              title={"John Doe"}
+              description={"Test description 3"}
+              image={require('./app/assets/marker-3.png')}
+            ></MapView.Marker>
+          </MapView>
       </View>
     );
   }
